@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToolkitMain));
             this.btnUpdateKeys = new System.Windows.Forms.Button();
             this.btnDeleteBadShapes = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,11 +41,18 @@
             this.btnChangedLinkedDoc = new System.Windows.Forms.Button();
             this.btnCAWSyncCheck = new System.Windows.Forms.Button();
             this.btnMobileLive = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cAWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mOBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnUpdateKeys
             // 
-            this.btnUpdateKeys.Location = new System.Drawing.Point(49, 202);
+            this.btnUpdateKeys.Location = new System.Drawing.Point(42, 227);
             this.btnUpdateKeys.Name = "btnUpdateKeys";
             this.btnUpdateKeys.Size = new System.Drawing.Size(194, 28);
             this.btnUpdateKeys.TabIndex = 2;
@@ -54,7 +62,7 @@
             // 
             // btnDeleteBadShapes
             // 
-            this.btnDeleteBadShapes.Location = new System.Drawing.Point(49, 270);
+            this.btnDeleteBadShapes.Location = new System.Drawing.Point(42, 295);
             this.btnDeleteBadShapes.Name = "btnDeleteBadShapes";
             this.btnDeleteBadShapes.Size = new System.Drawing.Size(194, 28);
             this.btnDeleteBadShapes.TabIndex = 3;
@@ -65,9 +73,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Broadway", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(259, 9);
+            this.label1.Location = new System.Drawing.Point(252, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(206, 31);
             this.label1.TabIndex = 2;
@@ -76,7 +85,7 @@
             // btnConnectToDB
             // 
             this.btnConnectToDB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnConnectToDB.Location = new System.Drawing.Point(150, 57);
+            this.btnConnectToDB.Location = new System.Drawing.Point(143, 83);
             this.btnConnectToDB.Name = "btnConnectToDB";
             this.btnConnectToDB.Size = new System.Drawing.Size(200, 28);
             this.btnConnectToDB.TabIndex = 0;
@@ -86,8 +95,8 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox1.Location = new System.Drawing.Point(150, 91);
+            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.textBox1.Location = new System.Drawing.Point(143, 117);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(413, 20);
             this.textBox1.TabIndex = 4;
@@ -97,7 +106,7 @@
             // 
             // btnDeleteJob
             // 
-            this.btnDeleteJob.Location = new System.Drawing.Point(49, 168);
+            this.btnDeleteJob.Location = new System.Drawing.Point(42, 193);
             this.btnDeleteJob.Name = "btnDeleteJob";
             this.btnDeleteJob.Size = new System.Drawing.Size(194, 28);
             this.btnDeleteJob.TabIndex = 4;
@@ -107,7 +116,7 @@
             // 
             // btnReRunDB
             // 
-            this.btnReRunDB.Location = new System.Drawing.Point(49, 134);
+            this.btnReRunDB.Location = new System.Drawing.Point(42, 159);
             this.btnReRunDB.Name = "btnReRunDB";
             this.btnReRunDB.Size = new System.Drawing.Size(194, 28);
             this.btnReRunDB.TabIndex = 1;
@@ -118,7 +127,7 @@
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnClose.Location = new System.Drawing.Point(363, 57);
+            this.btnClose.Location = new System.Drawing.Point(356, 83);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(200, 28);
             this.btnClose.TabIndex = 7;
@@ -129,7 +138,7 @@
             // 
             // btnComingSoon
             // 
-            this.btnComingSoon.Location = new System.Drawing.Point(284, 186);
+            this.btnComingSoon.Location = new System.Drawing.Point(277, 211);
             this.btnComingSoon.Name = "btnComingSoon";
             this.btnComingSoon.Size = new System.Drawing.Size(163, 60);
             this.btnComingSoon.TabIndex = 8;
@@ -140,7 +149,7 @@
             // btnChangedLinkedDoc
             // 
             this.btnChangedLinkedDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.btnChangedLinkedDoc.Location = new System.Drawing.Point(49, 236);
+            this.btnChangedLinkedDoc.Location = new System.Drawing.Point(42, 261);
             this.btnChangedLinkedDoc.Name = "btnChangedLinkedDoc";
             this.btnChangedLinkedDoc.Size = new System.Drawing.Size(194, 28);
             this.btnChangedLinkedDoc.TabIndex = 5;
@@ -150,7 +159,7 @@
             // 
             // btnCAWSyncCheck
             // 
-            this.btnCAWSyncCheck.Location = new System.Drawing.Point(479, 134);
+            this.btnCAWSyncCheck.Location = new System.Drawing.Point(472, 159);
             this.btnCAWSyncCheck.Name = "btnCAWSyncCheck";
             this.btnCAWSyncCheck.Size = new System.Drawing.Size(194, 28);
             this.btnCAWSyncCheck.TabIndex = 9;
@@ -160,7 +169,7 @@
             // 
             // btnMobileLive
             // 
-            this.btnMobileLive.Location = new System.Drawing.Point(479, 270);
+            this.btnMobileLive.Location = new System.Drawing.Point(472, 295);
             this.btnMobileLive.Name = "btnMobileLive";
             this.btnMobileLive.Size = new System.Drawing.Size(194, 28);
             this.btnMobileLive.TabIndex = 10;
@@ -168,11 +177,58 @@
             this.btnMobileLive.UseVisualStyleBackColor = true;
             this.btnMobileLive.Click += new System.EventHandler(this.btnMobileLive_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Teal;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.openToolStripMenuItem,
+            this.sAToolStripMenuItem,
+            this.cAWToolStripMenuItem,
+            this.mOBToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(701, 24);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.openToolStripMenuItem.Text = "Open";
+            // 
+            // sAToolStripMenuItem
+            // 
+            this.sAToolStripMenuItem.Name = "sAToolStripMenuItem";
+            this.sAToolStripMenuItem.Size = new System.Drawing.Size(33, 20);
+            this.sAToolStripMenuItem.Text = "SA";
+            // 
+            // cAWToolStripMenuItem
+            // 
+            this.cAWToolStripMenuItem.Name = "cAWToolStripMenuItem";
+            this.cAWToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.cAWToolStripMenuItem.Text = "CAW";
+            // 
+            // mOBToolStripMenuItem
+            // 
+            this.mOBToolStripMenuItem.Name = "mOBToolStripMenuItem";
+            this.mOBToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.mOBToolStripMenuItem.Text = "MOB";
+            // 
             // ToolkitMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(701, 335);
             this.Controls.Add(this.btnMobileLive);
             this.Controls.Add(this.btnCAWSyncCheck);
@@ -186,8 +242,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDeleteBadShapes);
             this.Controls.Add(this.btnUpdateKeys);
+            this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "ToolkitMain";
             this.Text = "Tech Toolkit";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,5 +268,11 @@
         private System.Windows.Forms.Button btnChangedLinkedDoc;
         private System.Windows.Forms.Button btnCAWSyncCheck;
         private System.Windows.Forms.Button btnMobileLive;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cAWToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mOBToolStripMenuItem;
     }
 }

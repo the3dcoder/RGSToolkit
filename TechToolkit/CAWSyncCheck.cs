@@ -13,7 +13,6 @@ namespace $safeprojectname$
 {
     public partial class CAWSyncCheck : Form
     {
-        string sql = "select * from cawsyncdowntransaction";
         string email = "h";
         SqlConnection cn = new SqlConnection("Data Source=" + Program.Server + ";Initial Catalog=" + Program.Database + ";Integrated Security=True");
 
@@ -25,16 +24,30 @@ namespace $safeprojectname$
         private void btnSyncDataDisplay_Click(object sender, EventArgs e)
         {
             cn.Open();
+            string payment = "select * from csswpaymentlog";
+            string sql = "select * from cawsyncdowntransaction";
             SqlCommand cmdsync = new SqlCommand(sql, cn);
-            SqlDataReader dr = cmdsync.ExecuteReader();
-            
+            SqlCommand sqlpayment = new SqlCommand(payment, cn);
+            SqlDataReader dr = cmdsync.ExecuteReader(); 
+
             while (dr.Read())
             {
                 lblSyncTime.Text = Convert.ToString(dr["Completed"]);
                 lblSiteID.Text = Convert.ToString(dr["SqlDbId"]);
-
             }
+
+            dr.Close();
+
+            SqlDataReader dr2 = sqlpayment.ExecuteReader();
+            
+            while (dr2.Read())
+            {
+                lblLastPayment.Text = Convert.ToString(dr2["paydate"]);
+                lblPaymentAmount.Text = Convert.ToString(Convert.ToDecimal(dr2["amount"]));
+            }
+            dr2.Close();
             cn.Close();
+            
         }
 
         private void btnDecrypt_Click(object sender, EventArgs e)
@@ -43,17 +56,15 @@ namespace $safeprojectname$
             email = Interaction.InputBox("Enter an email address to get a password for:");
             string sqlpassword = "select email, dbo.csswDisplayDetails(password, 854) from csswLoginProfile where email = '" + email + "'";
             SqlCommand cmddecrypt = new SqlCommand(sqlpassword, cn);
-            SqlDataReader dr2 = cmddecrypt.ExecuteReader();
+            SqlDataReader dr3 = cmddecrypt.ExecuteReader();
 
-            while (dr2.Read())
+            while (dr3.Read())
             {
                 lblEmailAddress.Text = email;
-                lblPassword.Text = Convert.ToString(dr2.GetString(1));
+                lblPassword.Text = Convert.ToString(dr3.GetString(1));
             }
+            dr3.Close();
             cn.Close();
-
         }
-
     }
-
 }

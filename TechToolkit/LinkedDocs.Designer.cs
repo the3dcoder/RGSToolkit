@@ -113,6 +113,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LinkedDocs";
             this.Text = "LinkedDocs";
             this.ResumeLayout(false);

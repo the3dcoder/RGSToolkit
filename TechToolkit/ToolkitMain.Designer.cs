@@ -37,7 +37,6 @@
             this.btnDeleteJob = new System.Windows.Forms.Button();
             this.btnReRunDB = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnComingSoon = new System.Windows.Forms.Button();
             this.btnChangedLinkedDoc = new System.Windows.Forms.Button();
             this.btnCAWSyncCheck = new System.Windows.Forms.Button();
             this.btnMobileLive = new System.Windows.Forms.Button();
@@ -136,16 +135,6 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.button6_Click);
             // 
-            // btnComingSoon
-            // 
-            this.btnComingSoon.Location = new System.Drawing.Point(277, 211);
-            this.btnComingSoon.Name = "btnComingSoon";
-            this.btnComingSoon.Size = new System.Drawing.Size(163, 60);
-            this.btnComingSoon.TabIndex = 8;
-            this.btnComingSoon.TabStop = false;
-            this.btnComingSoon.Text = "Coming Soon!";
-            this.btnComingSoon.UseVisualStyleBackColor = true;
-            // 
             // btnChangedLinkedDoc
             // 
             this.btnChangedLinkedDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
@@ -233,7 +222,6 @@
             this.Controls.Add(this.btnMobileLive);
             this.Controls.Add(this.btnCAWSyncCheck);
             this.Controls.Add(this.btnChangedLinkedDoc);
-            this.Controls.Add(this.btnComingSoon);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnReRunDB);
             this.Controls.Add(this.btnDeleteJob);
@@ -264,7 +252,6 @@
         private System.Windows.Forms.Button btnDeleteJob;
         private System.Windows.Forms.Button btnReRunDB;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button btnComingSoon;
         private System.Windows.Forms.Button btnChangedLinkedDoc;
         private System.Windows.Forms.Button btnCAWSyncCheck;
         private System.Windows.Forms.Button btnMobileLive;

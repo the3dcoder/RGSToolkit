@@ -37,13 +37,16 @@
             this.pbWebserviceQR = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblWebserviceDisplay = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnEmailTemplate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbQRCode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWebserviceQR)).BeginInit();
             this.SuspendLayout();
             // 
             // btnToken
             // 
-            this.btnToken.Location = new System.Drawing.Point(210, 222);
+            this.btnToken.Location = new System.Drawing.Point(213, 240);
             this.btnToken.Name = "btnToken";
             this.btnToken.Size = new System.Drawing.Size(150, 25);
             this.btnToken.TabIndex = 0;
@@ -64,7 +67,7 @@
             // 
             this.pbQRCode.Location = new System.Drawing.Point(71, 48);
             this.pbQRCode.Name = "pbQRCode";
-            this.pbQRCode.Size = new System.Drawing.Size(150, 150);
+            this.pbQRCode.Size = new System.Drawing.Size(175, 175);
             this.pbQRCode.TabIndex = 5;
             this.pbQRCode.TabStop = false;
             // 
@@ -79,7 +82,7 @@
             // 
             // btnMOBInfo
             // 
-            this.btnMOBInfo.Location = new System.Drawing.Point(210, 253);
+            this.btnMOBInfo.Location = new System.Drawing.Point(213, 459);
             this.btnMOBInfo.Name = "btnMOBInfo";
             this.btnMOBInfo.Size = new System.Drawing.Size(150, 25);
             this.btnMOBInfo.TabIndex = 6;
@@ -90,7 +93,7 @@
             // 
             this.pbWebserviceQR.Location = new System.Drawing.Point(336, 48);
             this.pbWebserviceQR.Name = "pbWebserviceQR";
-            this.pbWebserviceQR.Size = new System.Drawing.Size(150, 150);
+            this.pbWebserviceQR.Size = new System.Drawing.Size(175, 175);
             this.pbWebserviceQR.TabIndex = 7;
             this.pbWebserviceQR.TabStop = false;
             // 
@@ -112,12 +115,34 @@
             this.lblWebserviceDisplay.TabIndex = 9;
             this.lblWebserviceDisplay.Text = "____________________________";
             // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(213, 271);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(150, 25);
+            this.btnExport.TabIndex = 10;
+            this.btnExport.Text = "Export to Template";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // btnEmailTemplate
+            // 
+            this.btnEmailTemplate.Location = new System.Drawing.Point(213, 302);
+            this.btnEmailTemplate.Name = "btnEmailTemplate";
+            this.btnEmailTemplate.Size = new System.Drawing.Size(150, 25);
+            this.btnEmailTemplate.TabIndex = 11;
+            this.btnEmailTemplate.Text = "Email Template";
+            this.btnEmailTemplate.UseVisualStyleBackColor = true;
+            this.btnEmailTemplate.Click += new System.EventHandler(this.btnEmailTemplate_Click);
+            // 
             // MOBLive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(646, 496);
+            this.Controls.Add(this.btnEmailTemplate);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.lblWebserviceDisplay);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pbWebserviceQR);
@@ -146,5 +171,8 @@
         private System.Windows.Forms.PictureBox pbWebserviceQR;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblWebserviceDisplay;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Button btnEmailTemplate;
     }
 }

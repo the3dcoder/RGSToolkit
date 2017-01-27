@@ -47,6 +47,10 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
       </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="false" TargetFileName="BlankDocument.bmp">BlankDocument.bmp</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="LicenseDevices_cleancopy.bmp">LicenseDevices_cleancopy.bmp</ProjectItem>
+      </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="ToolkitMain.cs">ToolkitMain.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="ToolkitMain.Designer.cs">ToolkitMain.Designer.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="ToolkitMain.resx">ToolkitMain.resx</ProjectItem>

@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
     <Name>TechToolkit</Name>
-    <Description>&lt;No description available&gt;</Description>
+    <Description>TechToolkit</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
@@ -15,6 +15,7 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="TechToolkit.csproj" File="TechToolkit.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="CAWInfo.cs">CAWInfo.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="CAWSyncCheck.cs">CAWSyncCheck.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="CAWSyncCheck.Designer.cs">CAWSyncCheck.Designer.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="CAWSyncCheck.resx">CAWSyncCheck.resx</ProjectItem>

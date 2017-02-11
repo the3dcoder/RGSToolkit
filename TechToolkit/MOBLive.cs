@@ -95,7 +95,7 @@ namespace $safeprojectname$
             qr.DrawImageUnscaled(newqr, 65, 495);
             ws.DrawImageUnscaled(newwebserv, 65, 880);
 
-            newImage.Save("newQRsheet.jpg");
+            newImage.Save(@"C:\Users\ehayes\Desktop\QR Code Sheets\newQRsheet.jpg");
             
         }
 
@@ -114,7 +114,7 @@ namespace $safeprojectname$
             client.Credentials = new System.Net.NetworkCredential("ehayestrainer", "epicbber11");
             
             mail.IsBodyHtml = true;
-            mail.AlternateViews.Add(getEmbeddedImage("newQRsheet.jpg"));
+            mail.AlternateViews.Add(getEmbeddedImage(Program.Database.ToString() + "QRsheet.jpg"));
             mail.From = new MailAddress("ehayes@realgreen.com");
             mail.To.Add("ehayes@realgreen.com");
             mail.Subject = "Mobile Live QR Information";

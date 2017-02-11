@@ -65,7 +65,7 @@
             // 
             // pbQRCode
             // 
-            this.pbQRCode.Location = new System.Drawing.Point(71, 48);
+            this.pbQRCode.Location = new System.Drawing.Point(59, 48);
             this.pbQRCode.Name = "pbQRCode";
             this.pbQRCode.Size = new System.Drawing.Size(175, 175);
             this.pbQRCode.TabIndex = 5;
@@ -82,7 +82,7 @@
             // 
             // btnMOBInfo
             // 
-            this.btnMOBInfo.Location = new System.Drawing.Point(213, 459);
+            this.btnMOBInfo.Location = new System.Drawing.Point(213, 333);
             this.btnMOBInfo.Name = "btnMOBInfo";
             this.btnMOBInfo.Size = new System.Drawing.Size(150, 25);
             this.btnMOBInfo.TabIndex = 6;
@@ -91,7 +91,7 @@
             // 
             // pbWebserviceQR
             // 
-            this.pbWebserviceQR.Location = new System.Drawing.Point(336, 48);
+            this.pbWebserviceQR.Location = new System.Drawing.Point(324, 48);
             this.pbWebserviceQR.Name = "pbWebserviceQR";
             this.pbWebserviceQR.Size = new System.Drawing.Size(175, 175);
             this.pbWebserviceQR.TabIndex = 7;
@@ -140,7 +140,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(646, 496);
+            this.ClientSize = new System.Drawing.Size(594, 481);
             this.Controls.Add(this.btnEmailTemplate);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.lblWebserviceDisplay);

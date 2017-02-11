@@ -46,6 +46,7 @@
             this.sAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cAWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mOBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearDatabaseConnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -183,6 +184,8 @@
             // 
             // fileToolStripMenuItem
             // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clearDatabaseConnectionToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
@@ -210,6 +213,13 @@
             this.mOBToolStripMenuItem.Name = "mOBToolStripMenuItem";
             this.mOBToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.mOBToolStripMenuItem.Text = "MOB";
+            // 
+            // clearDatabaseConnectionToolStripMenuItem
+            // 
+            this.clearDatabaseConnectionToolStripMenuItem.Name = "clearDatabaseConnectionToolStripMenuItem";
+            this.clearDatabaseConnectionToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.clearDatabaseConnectionToolStripMenuItem.Text = "Clear Database Connection";
+            this.clearDatabaseConnectionToolStripMenuItem.Click += new System.EventHandler(this.clearDatabaseConnectionToolStripMenuItem_Click);
             // 
             // ToolkitMain
             // 
@@ -261,5 +271,6 @@
         private System.Windows.Forms.ToolStripMenuItem sAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cAWToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mOBToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearDatabaseConnectionToolStripMenuItem;
     }
 }

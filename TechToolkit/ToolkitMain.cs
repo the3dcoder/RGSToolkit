@@ -78,5 +78,11 @@ namespace $safeprojectname$
 
             Form9.Show();
         }
+
+        private void clearDatabaseConnectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.Server = "";
+            Program.Database = "";
+        }
     }
 }

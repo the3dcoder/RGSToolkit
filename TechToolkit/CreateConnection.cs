@@ -35,7 +35,7 @@ namespace $safeprojectname$
             }
             catch (Exception Ex) { MessageBox.Show("Could not connect to SQL Server.\r\n\r\nError Message:\r\n" + Ex.Message); }
 
-
+            CreateConnection.ActiveForm.Hide(); 
 
         }
     }

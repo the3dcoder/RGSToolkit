@@ -2,15 +2,15 @@
 Real Green Systems Tech Toolkit (Covering utilities for Service Assistant, CAW, and Mobile Live)
 
 To Add (Overall):
--Error checks and invalid input checks
--Better UI
--Complete the general menu options
--Minimize forms
--Clean the code
--Add ability to search/select databases and servers instead of typing
--Printing capabilities
+Error checks and invalid input checks
+Better UI
+Complete the general menu options
+Minimize forms
+Clean the code
+Add ability to search/select databases and servers instead of typing
+Printing capabilities
 -
-
+-
 To Add (CAW):
 -Ability to export CAW data in multiple formats (to be determined)
 -Ability to email CAW information to customer support emails

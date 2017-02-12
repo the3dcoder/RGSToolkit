@@ -42,17 +42,20 @@
             this.btnMobileLive = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearDatabaseConnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cAWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mOBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearDatabaseConnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnUpdateKeys
             // 
-            this.btnUpdateKeys.Location = new System.Drawing.Point(42, 227);
+            this.btnUpdateKeys.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdateKeys.BackgroundImage")));
+            this.btnUpdateKeys.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdateKeys.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUpdateKeys.Location = new System.Drawing.Point(43, 189);
             this.btnUpdateKeys.Name = "btnUpdateKeys";
             this.btnUpdateKeys.Size = new System.Drawing.Size(194, 28);
             this.btnUpdateKeys.TabIndex = 2;
@@ -62,7 +65,10 @@
             // 
             // btnDeleteBadShapes
             // 
-            this.btnDeleteBadShapes.Location = new System.Drawing.Point(42, 295);
+            this.btnDeleteBadShapes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteBadShapes.BackgroundImage")));
+            this.btnDeleteBadShapes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDeleteBadShapes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDeleteBadShapes.Location = new System.Drawing.Point(43, 257);
             this.btnDeleteBadShapes.Name = "btnDeleteBadShapes";
             this.btnDeleteBadShapes.Size = new System.Drawing.Size(194, 28);
             this.btnDeleteBadShapes.TabIndex = 3;
@@ -76,27 +82,29 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Broadway", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(252, 35);
+            this.label1.Location = new System.Drawing.Point(223, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 31);
+            this.label1.Size = new System.Drawing.Size(261, 31);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Tech Toolkit";
+            this.label1.Text = "Tech Toolkit 1.0";
             // 
             // btnConnectToDB
             // 
-            this.btnConnectToDB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnConnectToDB.Location = new System.Drawing.Point(143, 83);
+            this.btnConnectToDB.BackColor = System.Drawing.Color.Transparent;
+            this.btnConnectToDB.BackgroundImage = global::$safeprojectname$.Properties.Resources.greenbutton;
+            this.btnConnectToDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnConnectToDB.Location = new System.Drawing.Point(277, 167);
             this.btnConnectToDB.Name = "btnConnectToDB";
-            this.btnConnectToDB.Size = new System.Drawing.Size(200, 28);
+            this.btnConnectToDB.Size = new System.Drawing.Size(150, 28);
             this.btnConnectToDB.TabIndex = 0;
-            this.btnConnectToDB.Text = "Connect to Customer\'s SQL Database";
+            this.btnConnectToDB.Text = "Connection Details";
             this.btnConnectToDB.UseVisualStyleBackColor = false;
             this.btnConnectToDB.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox1.Location = new System.Drawing.Point(143, 117);
+            this.textBox1.Location = new System.Drawing.Point(144, 79);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(413, 20);
             this.textBox1.TabIndex = 4;
@@ -106,7 +114,10 @@
             // 
             // btnDeleteJob
             // 
-            this.btnDeleteJob.Location = new System.Drawing.Point(42, 193);
+            this.btnDeleteJob.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteJob.BackgroundImage")));
+            this.btnDeleteJob.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDeleteJob.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDeleteJob.Location = new System.Drawing.Point(43, 155);
             this.btnDeleteJob.Name = "btnDeleteJob";
             this.btnDeleteJob.Size = new System.Drawing.Size(194, 28);
             this.btnDeleteJob.TabIndex = 4;
@@ -116,7 +127,10 @@
             // 
             // btnReRunDB
             // 
-            this.btnReRunDB.Location = new System.Drawing.Point(42, 159);
+            this.btnReRunDB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReRunDB.BackgroundImage")));
+            this.btnReRunDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReRunDB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnReRunDB.Location = new System.Drawing.Point(43, 121);
             this.btnReRunDB.Name = "btnReRunDB";
             this.btnReRunDB.Size = new System.Drawing.Size(194, 28);
             this.btnReRunDB.TabIndex = 1;
@@ -126,10 +140,12 @@
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnClose.Location = new System.Drawing.Point(356, 83);
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackgroundImage = global::$safeprojectname$.Properties.Resources.redbutton;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnClose.Location = new System.Drawing.Point(301, 201);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(200, 28);
+            this.btnClose.Size = new System.Drawing.Size(101, 28);
             this.btnClose.TabIndex = 7;
             this.btnClose.TabStop = false;
             this.btnClose.Text = "Close Application ";
@@ -138,8 +154,11 @@
             // 
             // btnChangedLinkedDoc
             // 
+            this.btnChangedLinkedDoc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnChangedLinkedDoc.BackgroundImage")));
+            this.btnChangedLinkedDoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnChangedLinkedDoc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnChangedLinkedDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.btnChangedLinkedDoc.Location = new System.Drawing.Point(42, 261);
+            this.btnChangedLinkedDoc.Location = new System.Drawing.Point(43, 223);
             this.btnChangedLinkedDoc.Name = "btnChangedLinkedDoc";
             this.btnChangedLinkedDoc.Size = new System.Drawing.Size(194, 28);
             this.btnChangedLinkedDoc.TabIndex = 5;
@@ -149,7 +168,10 @@
             // 
             // btnCAWSyncCheck
             // 
-            this.btnCAWSyncCheck.Location = new System.Drawing.Point(472, 159);
+            this.btnCAWSyncCheck.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCAWSyncCheck.BackgroundImage")));
+            this.btnCAWSyncCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCAWSyncCheck.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCAWSyncCheck.Location = new System.Drawing.Point(473, 121);
             this.btnCAWSyncCheck.Name = "btnCAWSyncCheck";
             this.btnCAWSyncCheck.Size = new System.Drawing.Size(194, 28);
             this.btnCAWSyncCheck.TabIndex = 9;
@@ -159,7 +181,10 @@
             // 
             // btnMobileLive
             // 
-            this.btnMobileLive.Location = new System.Drawing.Point(472, 295);
+            this.btnMobileLive.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMobileLive.BackgroundImage")));
+            this.btnMobileLive.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMobileLive.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMobileLive.Location = new System.Drawing.Point(473, 257);
             this.btnMobileLive.Name = "btnMobileLive";
             this.btnMobileLive.Size = new System.Drawing.Size(194, 28);
             this.btnMobileLive.TabIndex = 10;
@@ -169,7 +194,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Teal;
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(4)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.openToolStripMenuItem,
@@ -189,6 +214,13 @@
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
+            // 
+            // clearDatabaseConnectionToolStripMenuItem
+            // 
+            this.clearDatabaseConnectionToolStripMenuItem.Name = "clearDatabaseConnectionToolStripMenuItem";
+            this.clearDatabaseConnectionToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.clearDatabaseConnectionToolStripMenuItem.Text = "Clear Database Connection";
+            this.clearDatabaseConnectionToolStripMenuItem.Click += new System.EventHandler(this.clearDatabaseConnectionToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
@@ -214,21 +246,14 @@
             this.mOBToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.mOBToolStripMenuItem.Text = "MOB";
             // 
-            // clearDatabaseConnectionToolStripMenuItem
-            // 
-            this.clearDatabaseConnectionToolStripMenuItem.Name = "clearDatabaseConnectionToolStripMenuItem";
-            this.clearDatabaseConnectionToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.clearDatabaseConnectionToolStripMenuItem.Text = "Clear Database Connection";
-            this.clearDatabaseConnectionToolStripMenuItem.Click += new System.EventHandler(this.clearDatabaseConnectionToolStripMenuItem_Click);
-            // 
             // ToolkitMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::$safeprojectname$.Properties.Resources.greenformbg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(701, 335);
+            this.ClientSize = new System.Drawing.Size(701, 308);
             this.Controls.Add(this.btnMobileLive);
             this.Controls.Add(this.btnCAWSyncCheck);
             this.Controls.Add(this.btnChangedLinkedDoc);
@@ -241,6 +266,7 @@
             this.Controls.Add(this.btnDeleteBadShapes);
             this.Controls.Add(this.btnUpdateKeys);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ToolkitMain";

@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
     <Name>TechToolkit</Name>
-    <Description>TechToolkit</Description>
+    <Description>&lt;No description available&gt;</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
@@ -31,12 +31,10 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="DeleteJobsSeason.cs">DeleteJobsSeason.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="DeleteJobsSeason.Designer.cs">DeleteJobsSeason.Designer.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="DeleteJobsSeason.resx">DeleteJobsSeason.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="greenbutton.png">greenbutton.png</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="LinkedDocs.cs">LinkedDocs.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="LinkedDocs.Designer.cs">LinkedDocs.Designer.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="LinkedDocs.resx">LinkedDocs.resx</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Login.cs">Login.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Login.Designer.cs">Login.Designer.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Login.resx">Login.resx</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="MOBLive.cs">MOBLive.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="MOBLive.Designer.cs">MOBLive.Designer.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="MOBLive.resx">MOBLive.resx</ProjectItem>
@@ -48,8 +46,12 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
       </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="redbutton.png">redbutton.png</ProjectItem>
       <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="false" TargetFileName="android-logo.png">android-logo.png</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="BlankDocument.bmp">BlankDocument.bmp</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="button.png">button.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="greenformbg.jpg">greenformbg.jpg</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="LicenseDevices_cleancopy.bmp">LicenseDevices_cleancopy.bmp</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="ToolkitMain.cs">ToolkitMain.cs</ProjectItem>

@@ -58,12 +58,12 @@
             this.LBAccountNumber = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearDatabaseConnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.connectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mOBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearDatabaseConnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.connectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -72,12 +72,14 @@
             // 
             // btnSyncDataDisplay
             // 
+            this.btnSyncDataDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(208)))), ((int)(((byte)(46)))));
+            this.btnSyncDataDisplay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSyncDataDisplay.Location = new System.Drawing.Point(64, 319);
             this.btnSyncDataDisplay.Name = "btnSyncDataDisplay";
             this.btnSyncDataDisplay.Size = new System.Drawing.Size(116, 30);
             this.btnSyncDataDisplay.TabIndex = 0;
             this.btnSyncDataDisplay.Text = "Display Sync Data";
-            this.btnSyncDataDisplay.UseVisualStyleBackColor = true;
+            this.btnSyncDataDisplay.UseVisualStyleBackColor = false;
             this.btnSyncDataDisplay.Click += new System.EventHandler(this.btnSyncDataDisplay_Click);
             // 
             // lblSyncTimeLabel
@@ -152,6 +154,9 @@
             // 
             // btnDecrypt
             // 
+            this.btnDecrypt.BackgroundImage = global::$safeprojectname$.Properties.Resources.greenformbg2;
+            this.btnDecrypt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDecrypt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDecrypt.Location = new System.Drawing.Point(53, 68);
             this.btnDecrypt.Name = "btnDecrypt";
             this.btnDecrypt.Size = new System.Drawing.Size(116, 30);
@@ -196,6 +201,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(4)))));
             this.groupBox1.Controls.Add(this.btnDecrypt);
             this.groupBox1.Controls.Add(this.lblPassword);
             this.groupBox1.Controls.Add(this.label3);
@@ -209,6 +215,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(4)))));
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.lblPaymentAmount);
             this.groupBox2.Controls.Add(this.label5);
@@ -236,6 +243,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(4)))));
             this.groupBox3.Controls.Add(this.lblCurrentDatabase);
             this.groupBox3.Controls.Add(this.lblCurrentServer);
             this.groupBox3.Controls.Add(this.label7);
@@ -285,6 +293,7 @@
             // 
             // LBSyncTimes
             // 
+            this.LBSyncTimes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(4)))));
             this.LBSyncTimes.FormattingEnabled = true;
             this.LBSyncTimes.Items.AddRange(new object[] {
             "Recently Completed Syncs",
@@ -297,6 +306,7 @@
             // 
             // LBPayments
             // 
+            this.LBPayments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(4)))));
             this.LBPayments.FormattingEnabled = true;
             this.LBPayments.Items.AddRange(new object[] {
             "Most Recent Payments",
@@ -310,6 +320,7 @@
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(4)))));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(422, 37);
             this.listBox1.Name = "listBox1";
@@ -318,6 +329,7 @@
             // 
             // LBPaymentAmounts
             // 
+            this.LBPaymentAmounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(4)))));
             this.LBPaymentAmounts.FormattingEnabled = true;
             this.LBPaymentAmounts.Items.AddRange(new object[] {
             "Amount ($)",
@@ -330,6 +342,7 @@
             // 
             // LBAccountNumber
             // 
+            this.LBAccountNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(4)))));
             this.LBAccountNumber.FormattingEnabled = true;
             this.LBAccountNumber.Items.AddRange(new object[] {
             "Customer #",
@@ -342,6 +355,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(4)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.optionsToolStripMenuItem,
@@ -362,6 +376,20 @@
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
+            // 
+            // clearDatabaseConnectionToolStripMenuItem
+            // 
+            this.clearDatabaseConnectionToolStripMenuItem.Name = "clearDatabaseConnectionToolStripMenuItem";
+            this.clearDatabaseConnectionToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.clearDatabaseConnectionToolStripMenuItem.Text = "Clear Database Connection";
+            this.clearDatabaseConnectionToolStripMenuItem.Click += new System.EventHandler(this.clearDatabaseConnectionToolStripMenuItem_Click);
+            // 
+            // connectToolStripMenuItem
+            // 
+            this.connectToolStripMenuItem.Name = "connectToolStripMenuItem";
+            this.connectToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.connectToolStripMenuItem.Text = "Connect";
+            this.connectToolStripMenuItem.Click += new System.EventHandler(this.connectToolStripMenuItem_Click);
             // 
             // optionsToolStripMenuItem
             // 
@@ -387,24 +415,11 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
-            // clearDatabaseConnectionToolStripMenuItem
-            // 
-            this.clearDatabaseConnectionToolStripMenuItem.Name = "clearDatabaseConnectionToolStripMenuItem";
-            this.clearDatabaseConnectionToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.clearDatabaseConnectionToolStripMenuItem.Text = "Clear Database Connection";
-            this.clearDatabaseConnectionToolStripMenuItem.Click += new System.EventHandler(this.clearDatabaseConnectionToolStripMenuItem_Click);
-            // 
-            // connectToolStripMenuItem
-            // 
-            this.connectToolStripMenuItem.Name = "connectToolStripMenuItem";
-            this.connectToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.connectToolStripMenuItem.Text = "Connect";
-            this.connectToolStripMenuItem.Click += new System.EventHandler(this.connectToolStripMenuItem_Click);
-            // 
             // CAWSyncCheck
             // 
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BackColor = System.Drawing.Color.Silver;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(859, 413);
             this.Controls.Add(this.LBAccountNumber);
             this.Controls.Add(this.LBPaymentAmounts);
@@ -416,11 +431,11 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "CAWSyncCheck";
             this.Text = "CAW Information Panel";
-            this.Load += new System.EventHandler(this.CAWSyncCheck_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

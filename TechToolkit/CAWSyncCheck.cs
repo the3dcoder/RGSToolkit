@@ -85,8 +85,6 @@ namespace $safeprojectname$
                         SqlCommand sqlcawpaymenterror = new SqlCommand(cawPaymentErrorLog, cn);
                         SqlCommand sqlfranchisepayment = new SqlCommand(franchisepaymentquery, cn);
                         SqlDataReader dr = cmdsync.ExecuteReader();
-                        List<String> synctimes = new List<string>();
-                        List<String> paymentsrecieved = new List<String>();
                         List<String> autopayenrollist = new List<String>();
                         List<String> autopayloglist = new List<String>();
                         List<String> cawpaymenterrorlist = new List<String>();
@@ -236,12 +234,6 @@ namespace $safeprojectname$
             dr3.Close();
             cn.Close();
         }
-
-        private void CAWSyncCheck_Load(object sender, EventArgs e)
-        {
-
-        }
-
 
         //Simple checks to keep the selected indexes together. (To add: right and left click abilities, possibly a lookup in the cust no list)
         private void LBPayments_SelectedIndexChanged(object sender, EventArgs e)

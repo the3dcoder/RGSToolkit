@@ -99,12 +99,6 @@
     <Compile Include="LinkedDocs.Designer.cs">
       <DependentUpon>LinkedDocs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
     <Compile Include="MOBLive.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,9 +136,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LinkedDocs.resx">
       <DependentUpon>LinkedDocs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MOBLive.resx">
       <DependentUpon>MOBLive.cs</DependentUpon>
@@ -187,6 +178,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LicenseDevices_cleancopy.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="greenbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="redbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenformbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\android-logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
